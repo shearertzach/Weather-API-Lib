@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather API</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="controls">
+      <form id="zipForm">
+        <input
+          id="zip"
+          type="number"
+          placeholder="Zip Code"
+          title="Please Enter a valid Zip Code"
+        />
+        <button type="submit">Search by Zip</button>
+      </form>
+      <form id="cityForm">
+        <input
+          id="city"
+          type="text"
+          placeholder="City Name"
+          title="Please Enter a valid City Name"
+        />
+        <button type="submit">Search by City</button>
+      </form>
+      <form id="geoForm">
+        <input
+          id="latlong"
+          type="text"
+          placeholder="Latitude, Longitude"
+          title="Please Enter valid coordinates"
+        />
+        <button type="submit">Search by Coordinates</button>
+      </form>
+    </div>
+    <div class="container">
+      <h1 id="error" style="color: red">
+        <!-- Error -->
+      </h1>
+      <div class="weatherInfo">
+        <h1 id="temp">
+          <!--Temp -->
+        </h1>
+        <p id="desc">
+          <!-- description -->
+        </p>
+      </div>
+    </div>
+    <script src="weather.js" type="module"></script>
+  </body>
+</html>
